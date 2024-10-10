@@ -19,7 +19,7 @@ Este documento contém o relatório dos testes realizados no projeto. Os testes 
 | `testRelatorioVendas`             | Caixa Preta       | Sucesso   | Verifica se o relatório de vendas retorna os totais corretos agrupados por data.                                                                |
 | `testRelatorioVazio`              | Caixa Preta       | Sucesso   | Verifica se o relatório de vendas retorna vazio quando não há pedidos criados.                                                                  |
 | `testMocandoProduto`              | Mock              | Sucesso   | Verifica se os métodos de `Produto` são chamados corretamente ao adicionar produtos a um pedido, simulando a classe `Produto`.                   |
-| `testMocandoGerenciadorPedidos`   | Mockin            | Sucesso   | Verifica se os métodos de criação de pedidos e relatório de vendas são chamados corretamente, simulando a classe `GerenciadorPedidos`.           |
+| `testMocandoGerenciadorPedidos`   | Mock              | Sucesso   | Verifica se os métodos de criação de pedidos e relatório de vendas são chamados corretamente, simulando a classe `GerenciadorPedidos`.           |
 
 ## Observação Importante
 
