@@ -1,28 +1,28 @@
 # APS de Testes de Software
 
-Este documento contÈm o relatÛrio dos testes realizados no projeto. Os testes cobrem as funcionalidades das classes `Produto`, `Pedido` e `GerenciadorPedidos`, utilizando testes de **Caixa Branca**, **Caixa Preta**, e **Mocking**.
+Este documento cont√©m o relat√≥rio dos testes realizados no projeto. Os testes cobrem as funcionalidades das classes `Produto`, `Pedido` e `GerenciadorPedidos`, utilizando testes de **Caixa Branca**, **Caixa Preta**, e **Mocking**.
 
 ## Resultados dos Testes
-| Teste                            | Categoria         | Resultado | DescriÁ„o                                                                                                                                       |
+| Teste                            | Categoria         | Resultado | Descri√ß√£o                                                                                                                                       |
 | --------------------------------- | ----------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `testInicializacaoProduto`        | Caixa Branca      | Sucesso   | Verifica a inicializaÁ„o correta de um objeto `Produto` com nome, preÁo e estoque.                                                              |
-| `testRemocaoEstoqueValido`        | Caixa Branca      | Sucesso   | Verifica se a remoÁ„o de estoque atualiza corretamente o valor de estoque quando a quantidade È v·lida.                                          |
-| `testRemocaoEstoqueInsuficiente`  | Caixa Branca      | Sucesso   | Verifica se uma exceÁ„o È lanÁada ao tentar remover mais do que o estoque disponÌvel.                                                            |
-| `testAdicaoProdutoAtualizaEstoque`| Caixa Branca      | Sucesso   | Verifica se a adiÁ„o de um produto ao pedido atualiza corretamente o estoque.                                                                    |
-| `testAdicaoProdutoEstoqueInsuficiente`| Caixa Branca  | Sucesso   | Verifica se uma exceÁ„o È lanÁada ao tentar adicionar um produto sem estoque suficiente.                                                         |
-| `testCalculoTotalSemDesconto`     | Caixa Branca      | Sucesso   | Verifica se o c·lculo total do pedido È feito corretamente sem a aplicaÁ„o de descontos.                                                        |
-| `testCalculoTotalComDesconto`     | Caixa Branca      | Sucesso   | Verifica se o c·lculo total do pedido È feito corretamente com descontos aplicados.                                                             |
-| `testCalculoTotal`                | Caixa Preta       | Sucesso   | Verifica se o c·lculo do total de um pedido leva em consideraÁ„o o preÁo de cada produto e suas respectivas quantidades.                         |
-| `testAplicacaoDesconto`           | Caixa Preta       | Sucesso   | Verifica se o desconto È aplicado corretamente ao total do pedido.                                                                              |
-| **`testDescontoNegativo`**        | **Caixa Preta**   | **Falha** | **Descontos negativos est„o sendo permitidos, enquanto uma exceÁ„o deveria ser lanÁada ao tentar aplicar um desconto negativo.**                 |
+| `testInicializacaoProduto`        | Caixa Branca      | Sucesso   | Verifica a inicializa√ß√£o correta de um objeto `Produto` com nome, pre√ßo e estoque.                                                              |
+| `testRemocaoEstoqueValido`        | Caixa Branca      | Sucesso   | Verifica se a remo√ß√£o de estoque atualiza corretamente o valor de estoque quando a quantidade √© v√°lida.                                          |
+| `testRemocaoEstoqueInsuficiente`  | Caixa Branca      | Sucesso   | Verifica se uma exce√ß√£o √© lan√ßada ao tentar remover mais do que o estoque dispon√≠vel.                                                            |
+| `testAdicaoProdutoAtualizaEstoque`| Caixa Branca      | Sucesso   | Verifica se a adi√ß√£o de um produto ao pedido atualiza corretamente o estoque.                                                                    |
+| `testAdicaoProdutoEstoqueInsuficiente`| Caixa Branca  | Sucesso   | Verifica se uma exce√ß√£o √© lan√ßada ao tentar adicionar um produto sem estoque suficiente.                                                         |
+| `testCalculoTotalSemDesconto`     | Caixa Branca      | Sucesso   | Verifica se o c√°lculo total do pedido √© feito corretamente sem a aplica√ß√£o de descontos.                                                        |
+| `testCalculoTotalComDesconto`     | Caixa Branca      | Sucesso   | Verifica se o c√°lculo total do pedido √© feito corretamente com descontos aplicados.                                                             |
+| `testCalculoTotal`                | Caixa Preta       | Sucesso   | Verifica se o c√°lculo do total de um pedido leva em considera√ß√£o o pre√ßo de cada produto e suas respectivas quantidades.                         |
+| `testAplicacaoDesconto`           | Caixa Preta       | Sucesso   | Verifica se o desconto √© aplicado corretamente ao total do pedido.                                                                              |
+| **`testDescontoNegativo`**        | **Caixa Preta**   | **Falha** | **Descontos negativos est√£o sendo permitidos, enquanto uma exce√ß√£o deveria ser lan√ßada ao tentar aplicar um desconto negativo.**                 |
 | `testListagemPedidos`             | Caixa Preta       | Sucesso   | Verifica se a listagem de pedidos retorna todos os pedidos criados com a lista correta de produtos.                                              |
-| `testRelatorioVendas`             | Caixa Preta       | Sucesso   | Verifica se o relatÛrio de vendas retorna os totais corretos agrupados por data.                                                                |
-| `testRelatorioVazio`              | Caixa Preta       | Sucesso   | Verifica se o relatÛrio de vendas retorna vazio quando n„o h· pedidos criados.                                                                  |
-| `testMocandoProduto`              | Mocking           | Sucesso   | Verifica se os mÈtodos de `Produto` s„o chamados corretamente ao adicionar produtos a um pedido, simulando a classe `Produto`.                   |
-| `testMocandoGerenciadorPedidos`   | Mocking           | Sucesso   | Verifica se os mÈtodos de criaÁ„o de pedidos e relatÛrio de vendas s„o chamados corretamente, simulando a classe `GerenciadorPedidos`.           |
+| `testRelatorioVendas`             | Caixa Preta       | Sucesso   | Verifica se o relat√≥rio de vendas retorna os totais corretos agrupados por data.                                                                |
+| `testRelatorioVazio`              | Caixa Preta       | Sucesso   | Verifica se o relat√≥rio de vendas retorna vazio quando n√£o h√° pedidos criados.                                                                  |
+| `testMocandoProduto`              | Mock              | Sucesso   | Verifica se os m√©todos de `Produto` s√£o chamados corretamente ao adicionar produtos a um pedido, simulando a classe `Produto`.                   |
+| `testMocandoGerenciadorPedidos`   | Mockin            | Sucesso   | Verifica se os m√©todos de cria√ß√£o de pedidos e relat√≥rio de vendas s√£o chamados corretamente, simulando a classe `GerenciadorPedidos`.           |
 
-## ObservaÁ„o Importante
+## Observa√ß√£o Importante
 
-- **Falha em `testDescontoNegativo`:** O teste de aplicaÁ„o de desconto negativo (`testDescontoNegativo`) falhou. O sistema est· permitindo a aplicaÁ„o de descontos negativos, o que n„o deveria ocorrer. A funcionalidade precisa ser ajustada para lanÁar uma exceÁ„o quando um valor de desconto negativo for passado.
+- **Falha em `testDescontoNegativo`:** O teste de aplica√ß√£o de desconto negativo (`testDescontoNegativo`) falhou. O sistema est√° permitindo a aplica√ß√£o de descontos negativos, o que n√£o deveria ocorrer. A funcionalidade precisa ser ajustada para lan√ßar uma exce√ß√£o quando um valor de desconto negativo for passado.
 
 ---
